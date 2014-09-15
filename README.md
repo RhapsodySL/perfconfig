@@ -16,8 +16,12 @@ or if that doesn't work, go to
 
 `C:\Program Files\Steam\SteamApps\common\Team Fortress 2\tf\cfg`
 
+For Mac:
+
+`Users/UserName/Library/Application Support/Steam/SteamApps/common/Team Fortress 2/tf/cfg`
+
 After you do that, just start up your game and type 'setup' in console, and you'll be good to go.
 
 If you chose Raw Text, then just go to the filepath stated above, copy the text from the browser window, and paste it into your autoexec.cfg file. If you don't have an autoexec.cfg file, then create it.
 
-If you're using Mac or Linux, I can't help you out with where to place it, sorry. :(
+If you're using Linux, I can't help you out with where to place it, sorry. :(
