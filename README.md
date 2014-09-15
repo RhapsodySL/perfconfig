@@ -21,7 +21,7 @@ For Mac:
 `Users/UserName/Library/Application Support/Steam/SteamApps/common/Team Fortress 2/tf/cfg`
 
 For Linux:
-`/.steam/SteamApps/common/Team Fortress 2/tf/cfg/`
+`/.steam/SteamApps/common/Team Fortress 2/tf/cfg`
  
 After you do that, just start up your game and type 'setup' in console, and you'll be good to go.
 
