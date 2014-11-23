@@ -28,7 +28,7 @@ After you do that, just start up your game and type 'setup' in console, and you'
 
 If you chose Raw Text, then just go to the filepath stated above, copy the text from the browser window, and paste it into your autoexec.cfg file. If you don't have an autoexec.cfg file, then create it.
 
-###NEW: Setting up the auto-updater for Windows
+###Setting up the auto-updater for Windows
 
 1. Download the config. You'll see a batch file and wget.exe in the root of the directory once you extract it. Move the extracted folder to a safe location where you won't delete it.
 2. Open the batch file in a program like Notepad or Notepad++. Modify the path past -o to the path of your cfg folder in-game. The one I put will work for the default configurations, I think, but since I don't use the default path myself I can't check that. MAKE SURE to keep the --no-check-certificate flag after the filepath or else the updater won't work.
