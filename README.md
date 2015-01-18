@@ -43,7 +43,8 @@ Go to the Actions tab, and press New in the bottom right. Under Program/Script, 
 
 Go to the Settings tab, and under "If the task is already running, then the following rule applies:", change the dropdown to "Stop the existing instance". Afterwards, press OK. Congratulations, you set up the auto updater!
 
-###Setting up the auto-updated for Linux
+###Setting up the auto-updater for Linux
 
 1. Download the config and extract it.
 2. Simply run the `update.sh` script from a terminal or from a file manager. (and you can drag it to your desktop for convenient access)
+3. You can, of course, make it run automatically by reading http://kvz.io/blog/2007/07/29/schedule-tasks-on-linux-using-crontab/ .
