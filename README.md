@@ -22,7 +22,7 @@ For Mac:
 
 For Linux:
 
-`~/.steam/SteamApps/common/Team Fortress 2/tf/cfg`
+`~/.steam/steam/SteamApps/common/Team Fortress 2/tf/cfg`
  
 After you do that, just start up your game and type 'setup' in console, and you'll be good to go.
 
@@ -42,3 +42,8 @@ Go to the Triggers tab, and press New in the bottom right. At this point, go wil
 Go to the Actions tab, and press New in the bottom right. Under Program/Script, put the filepath to the batch file that was in the download. the batch file needs to be at the end of the filepath (so it should end with \update.bat). Next to "Add arguments (optional)", put /min in the box. In "Start in (optional)", put the filepath to the directory that contains the batch file and wget.exe. However, only put the filepath, and don't include the .bat file at the end like you did initially. Press OK.
 
 Go to the Settings tab, and under "If the task is already running, then the following rule applies:", change the dropdown to "Stop the existing instance". Afterwards, press OK. Congratulations, you set up the auto updater!
+
+###Setting up the auto-updated for Linux
+
+1. Download the config and extract it.
+2. Simply run the `update.sh` script from a terminal or from a file manager. (and you can drag it to your desktop for convenient access)
