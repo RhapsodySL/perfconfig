@@ -30,16 +30,16 @@ If you chose Raw Text, then just go to the filepath stated above, copy the text 
 
 ###Setting up the auto-updater for Windows
 
-1. Download the config. You'll see a batch file and wget.exe in the root of the directory once you extract it. Move the extracted folder to a safe location where you won't delete it.
-2. Open the batch file in a program like Notepad or Notepad++. Modify the path past -o to the path of your cfg folder in-game. The one I put will work for the default configurations, I think, but since I don't use the default path myself I can't check that. MAKE SURE to keep the --no-check-certificate flag after the filepath or else the updater won't work.
-Save and launch the batch file and look in your cfg directory. The autoexec file should now be updated. Now to make it run automatically and silently.
+1. Download the config. You'll see  two batch files and wget.exe in the root of the directory once you extract it. Move the extracted folder to a safe location where you won't delete it. Select 2a or 2b from this point depending on your Team Fortress 2 installation directory.
+2a. Don't do anything if you have Team Fortress 2 installed in the default installation path (if it's in one of the above installation paths, it's in the default). Just run updater.bat to ensure it works. Look in your cfg directory. The autoexec file should now be updated. Now to make it run automatically and silently.
+2b. If you have Team Fortress 2 installed somewhere other than the default directory, open updater-legacy.bat. Edit the filepath in the grep line to your installation path, in the same format. Save the file, and run it to make sure it works.
 3. Open Task Scheduler, and click Create Task on the right. Enter a recognizable name and description so that you know you made it so you can find it again later if needed.
 
 Under Security Options in the same tab, you should see a button that says Change User or Group. Press that, and under "Enter the object name to select", put in SYSTEM. Afterwards, press OK.
 
 Go to the Triggers tab, and press New in the bottom right. At this point, go wild, and select whichever triggers you'd like. Ideally, you should make it run at a certain time every day, but you can also make it run automatically whenever the computer is idle for X amount of time.
 
-Go to the Actions tab, and press New in the bottom right. Under Program/Script, put the filepath to the batch file that was in the download. the batch file needs to be at the end of the filepath (so it should end with \update.bat). Next to "Add arguments (optional)", put /min in the box. In "Start in (optional)", put the filepath to the directory that contains the batch file and wget.exe. However, only put the filepath, and don't include the .bat file at the end like you did initially. Press OK.
+Go to the Actions tab, and press New in the bottom right. Under Program/Script, put the filepath to the batch file that was in the download. the batch file needs to be at the end of the filepath (so it should end with \update.bat, or updater-legacy.bat if you're using that instead). Next to "Add arguments (optional)", put /min in the box. In "Start in (optional)", put the filepath to the directory that contains the batch file and wget.exe. However, only put the filepath, and don't include the .bat file at the end like you did initially. Press OK.
 
 Go to the Settings tab, and under "If the task is already running, then the following rule applies:", change the dropdown to "Stop the existing instance". Afterwards, press OK. Congratulations, you set up the auto updater!
 
@@ -48,3 +48,6 @@ Go to the Settings tab, and under "If the task is already running, then the foll
 1. Download the config and extract it.
 2. Simply run the `update.sh` script from a terminal or from a file manager. (and you can drag it to your desktop for convenient access)
 3. You can, of course, make it run automatically by reading http://kvz.io/blog/2007/07/29/schedule-tasks-on-linux-using-crontab/ .
+
+
+If the auto updater for either operating system fails to work, then please tell me by making an issue on the github page. For the Windows updater, replace EXIT with PAUSE, and post the screenshot so I can see what happened.
