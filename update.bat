@@ -7,15 +7,17 @@ REM |
 REM | Final note; I haven't actually tested the 32-bit line since I don't have a 32-bit OS. If this doesn't work properly,
 REM | then please add an issue on the github page at https://github.com/RhapsodySL/perfconfig. Thanks.
 
+SET CURRENTDIR="%cd%"
+
 :CheckOS
 IF EXIST "%PROGRAMFILES(X86)%" (GOTO 64BIT) ELSE (GOTO 32BIT)
 
 :64BIT
+cd "C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2\tf\cfg\autoexec.cfg"
 wget https://raw.githubusercontent.com/RhapsodySL/perfconfig/master/tf/cfg/autoexec.cfg -O "C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2\tf\cfg\autoexec.cfg" --no-check-certificate
 exit
 
 :32BIT
+cd "C:\Program Files\Steam\steamapps\common\Team Fortress 2\tf\cfg\autoexec.cfg"
 wget https://raw.githubusercontent.com/RhapsodySL/perfconfig/master/tf/cfg/autoexec.cfg -O "C:\Program Files\Steam\steamapps\common\Team Fortress 2\tf\cfg\autoexec.cfg" --no-check-certificate
 exit
-
-
