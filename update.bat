@@ -15,9 +15,9 @@ IF EXIST "%PROGRAMFILES(X86)%" (GOTO 64BIT) ELSE (GOTO 32BIT)
 :64BIT
 cd "C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2\tf\cfg\autoexec.cfg"
 wget https://raw.githubusercontent.com/RhapsodySL/perfconfig/master/tf/cfg/autoexec.cfg -O "C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2\tf\cfg\autoexec.cfg" --no-check-certificate
-exit
+EXIT
 
 :32BIT
 cd "C:\Program Files\Steam\steamapps\common\Team Fortress 2\tf\cfg\autoexec.cfg"
 wget https://raw.githubusercontent.com/RhapsodySL/perfconfig/master/tf/cfg/autoexec.cfg -O "C:\Program Files\Steam\steamapps\common\Team Fortress 2\tf\cfg\autoexec.cfg" --no-check-certificate
-exit
+EXIT
