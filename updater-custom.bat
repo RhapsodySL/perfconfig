@@ -16,18 +16,16 @@ IF DEFINED TF2CONFIGLOCATION (GOTO CheckOS) ELSE (GOTO SetLoc)
 SET /P location="Enter the path to the file you want to write the config to: "
 SETX TF2CONFIGLOCATION "%location%"
 ECHO The script has to exit to save your custom location. Run it again.
-PAUSE 
+PAUSE
 EXIT 
 
 :CheckOS
 IF EXIST "%PROGRAMFILES(X86)%" (GOTO 64BIT) ELSE (GOTO 32BIT)
 
 :64BIT
-cd "C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2\tf\cfg\autoexec.cfg"
 wget https://raw.githubusercontent.com/RhapsodySL/perfconfig/master/tf/cfg/autoexec.cfg -O "%TF2CONFIGLOCATION%" --no-check-certificate
 EXIT
 
 :32BIT
-cd "C:\Program Files\Steam\steamapps\common\Team Fortress 2\tf\cfg\autoexec.cfg"
 wget https://raw.githubusercontent.com/RhapsodySL/perfconfig/master/tf/cfg/autoexec.cfg -O "%TF2CONFIGLOCATION%" --no-check-certificate
 EXIT
