@@ -1,3 +1,7 @@
+This config is completely unmaintained and I don't have any current intention of updating it. It should work as-is (as of 7/24/18) but any functionality broken in the future is unlikely to be fixed.
+==========
+
+
 Rhapsody's Performance Config
 ==========
 Making Team Fortress 2 faster since 2014
